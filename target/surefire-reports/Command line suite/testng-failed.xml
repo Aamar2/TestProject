@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test" preserve-order="false">
+    <classes>
+      <class name="qa.tests.BaseTest"/>
+      <class name="qa.tests.RestApiTest"/>
+      <class name="qa.tests.SampleTest"/>
+    </classes>
+  </test> <!-- Command line test -->
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="qa.tests.RestApiTest">
+        <methods>
+          <include name="deleteUser_Delete"/>
+          <include name="setup"/>
+          <include name="createUser_Post"/>
+          <include name="getUser_GET"/>
+        </methods>
+      </class> <!-- qa.tests.RestApiTest -->
+      <class name="qa.tests.SampleTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="createAccount"/>
+          <include name="startReport"/>
+        </methods>
+      </class> <!-- qa.tests.SampleTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

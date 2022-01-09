@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="6368" started-at="2022-01-09T07:54:54Z" finished-at="2022-01-09T07:55:00Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="6368" started-at="2022-01-09T07:54:54Z" finished-at="2022-01-09T07:55:00Z">
+      <class name="qa.tests.RestApiTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:qa.tests.RestApiTest@6a4f787b]" name="setup" is-config="true" duration-ms="1730" started-at="2022-01-09T13:24:54Z" finished-at="2022-01-09T13:24:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="userRegistration()[pri:1, instance:qa.tests.RestApiTest@6a4f787b]" name="userRegistration" duration-ms="2547" started-at="2022-01-09T13:24:56Z" finished-at="2022-01-09T13:24:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRegistration -->
+        <test-method status="PASS" signature="userLogin()[pri:2, instance:qa.tests.RestApiTest@6a4f787b]" name="userLogin" duration-ms="342" started-at="2022-01-09T13:24:58Z" finished-at="2022-01-09T13:24:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogin -->
+        <test-method status="PASS" signature="get_Users()[pri:3, instance:qa.tests.RestApiTest@6a4f787b]" name="get_Users" duration-ms="287" started-at="2022-01-09T13:24:59Z" finished-at="2022-01-09T13:24:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_Users -->
+        <test-method status="PASS" signature="createUser_Post()[pri:4, instance:qa.tests.RestApiTest@6a4f787b]" name="createUser_Post" duration-ms="406" started-at="2022-01-09T13:24:59Z" finished-at="2022-01-09T13:24:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUser_Post -->
+        <test-method status="PASS" signature="getUser_GET()[pri:5, instance:qa.tests.RestApiTest@6a4f787b]" name="getUser_GET" duration-ms="242" started-at="2022-01-09T13:24:59Z" finished-at="2022-01-09T13:25:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUser_GET -->
+        <test-method status="PASS" signature="updateUser_Put()[pri:6, instance:qa.tests.RestApiTest@6a4f787b]" name="updateUser_Put" duration-ms="252" started-at="2022-01-09T13:25:00Z" finished-at="2022-01-09T13:25:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUser_Put -->
+        <test-method status="PASS" signature="deleteUser_Delete()[pri:7, instance:qa.tests.RestApiTest@6a4f787b]" name="deleteUser_Delete" duration-ms="241" started-at="2022-01-09T13:25:00Z" finished-at="2022-01-09T13:25:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUser_Delete -->
+        <test-method status="PASS" signature="getUser_GET_afterDelete()[pri:8, instance:qa.tests.RestApiTest@6a4f787b]" name="getUser_GET_afterDelete" duration-ms="269" started-at="2022-01-09T13:25:00Z" finished-at="2022-01-09T13:25:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUser_GET_afterDelete -->
+      </class> <!-- qa.tests.RestApiTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

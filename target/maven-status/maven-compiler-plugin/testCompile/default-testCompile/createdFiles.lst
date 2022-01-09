@@ -1,0 +1,6 @@
+qa\tests\SampleTest.class
+qa\tests\RestApiTest.class
+qa\tests\Xpaths.class
+qa\drivers\DriverManager.class
+qa\tests\PropertyReader.class
+qa\tests\BaseTest.class
