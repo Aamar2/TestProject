@@ -37,13 +37,14 @@ public class DriverManager {
             localDriver = new InternetExplorerDriver(capabilities);
         }
         if (BROWSER_TYPE.equalsIgnoreCase("chrome")) {
-            DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+        	DesiredCapabilities capabilities = DesiredCapabilities.chrome();
             capabilities.setCapability("setAcceptUntrustedCertificates", true);
             ChromeOptions options = new ChromeOptions();
             options.addArguments("start-maximized");
             options.addArguments("chrome.switches", "--disable-extensions");
             options.addArguments("disable-infobars");
             options.addArguments("test-type");
+            options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors","--disable-extensions","--no-sandbox","--disable-dev-shm-usage");
             //File file = new File(RESOURCES_DIR + File.separator + "selenium" + File.separator
              //       + "chrome" + File.separator + "chromedriver.exe");
             File file = new File(System.getProperty("user.dir")+"\\drivers\\chromedriver_win32\\\\chromedriver.exe");
