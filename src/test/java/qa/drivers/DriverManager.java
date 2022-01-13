@@ -31,7 +31,7 @@ public class DriverManager {
             capabilities.setCapability("requireWindowFocus", true);
             capabilities.setCapability("ensureCleanSession", true);
             capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-            
+            //
             File file = new File(System.getProperty("user.dir")+"/drivers/IEDriverServer_x64_2.48.0/IEDriverServer.exe");
             System.setProperty("webdriver.ie.driver", file.getAbsolutePath());
             localDriver = new InternetExplorerDriver(capabilities);
