@@ -32,7 +32,7 @@ public class DriverManager {
             capabilities.setCapability("ensureCleanSession", true);
             capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
             
-            File file = new File(System.getProperty("user.dir")+"\\drivers\\IEDriverServer_x64_2.48.0\\\\IEDriverServer.exe");
+            File file = new File(System.getProperty("user.dir")+"/drivers/IEDriverServer_x64_2.48.0/IEDriverServer.exe");
             System.setProperty("webdriver.ie.driver", file.getAbsolutePath());
             localDriver = new InternetExplorerDriver(capabilities);
         }
@@ -47,7 +47,7 @@ public class DriverManager {
             options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors","--disable-extensions","--no-sandbox","--disable-dev-shm-usage");
             //File file = new File(RESOURCES_DIR + File.separator + "selenium" + File.separator
              //       + "chrome" + File.separator + "chromedriver.exe");
-            File file = new File(System.getProperty("user.dir")+"\\drivers\\chromedriver_win32\\\\chromedriver.exe");
+            File file = new File(System.getProperty("user.dir")+"/drivers/chromedriver_win32/chromedriver.exe");
             //File file = new File("C:\\SELENIUM\\DQ\\bg\\automation\\ui\\BG_UI_10.2\\lib\\chromedriver_win32\\chromedriver.exe");
             System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
             capabilities.setCapability("chrome.binary", file.getAbsolutePath());
@@ -65,7 +65,7 @@ public class DriverManager {
             options.addArguments("chrome.switches", "--disable-extensions");
             options.addArguments("test-type");
             options.addArguments("--start-maximized");
-            File file = new File("C:\\SELENIUM\\DQ\\bg\\automation\\ui\\BG_UI_10.2\\lib\\chromedriver_win32\\chromedriver.exe");
+            File file = new File(System.getProperty("user.dir")+"/drivers/chromedriver_win32/chromedriver.exe");
             System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
             capabilities.setCapability("chrome.binary", file.getAbsolutePath());
             capabilities.setCapability(ChromeOptions.CAPABILITY, options);
